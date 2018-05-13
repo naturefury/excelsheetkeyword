@@ -1,0 +1,20 @@
+May 13, 2018 5:06:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Atom INFO :: Launched the mobile driver with Capabilities {appActivity: org.cyclos.mobile.Cyclos4, appPackage: org.cyclos.mobile, deviceName: e29292d8, platformName: Android, platformVersion: 8.0.0} on the appium server http:0.0.0.0:4723/wd/hub
+Atom INFO :: Default timeout to locate each element is set to 5
+Atom INFO :: SentKeys [Driver]
+Atom INFO :: Entered demo.cyclos.org into the Cyclos URL textbox [Test Step]
+Atom INFO :: Clicked [Driver]
+Atom INFO :: Clicked SUBMIT button [Test Step]
+Atom INFO :: SentKeys [Driver]
+Atom INFO :: Entered demo into the Cyclos username textbox [Test Step]
+Atom INFO :: SentKeys [Driver]
+Atom INFO :: Entered 1234 into the Cyclos password textbox [Test Step]
+Atom INFO :: Clicked [Driver]
+Atom INFO :: Clicked LOGIN button [Test Step]
+Atom INFO :: Closed the mobile driver
+
+1 Scenarios ([32m1 passed[0m)
+2 Steps ([32m2 passed[0m)
+0m40.449s
+
