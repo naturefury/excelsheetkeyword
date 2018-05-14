@@ -1,4 +1,7 @@
-C:\Projects\EclipseWorkspace\Atom\src\test\java\stepdefinitions\package-info.java
-C:\Projects\EclipseWorkspace\Atom\src\test\java\testrunner\Runner.java
-C:\Projects\EclipseWorkspace\Atom\src\test\java\stepdefinitions\cyclos\LoginCyclos.java
-C:\Projects\EclipseWorkspace\Atom\src\test\java\testrunner\package-info.java
+E:\Bala\git-repo\Atom\Code\src\test\java\stepdefinitions\cyclos\LoginCyclos.java
+E:\Bala\git-repo\Atom\Code\src\test\java\pages\cyclos\PgeCyclosLogin.java
+E:\Bala\git-repo\Atom\Code\src\test\java\pages\cyclos\package-info.java
+E:\Bala\git-repo\Atom\Code\src\test\java\testrunner\package-info.java
+E:\Bala\git-repo\Atom\Code\src\test\java\pages\cyclos\PgeCyclosConfigure.java
+E:\Bala\git-repo\Atom\Code\src\test\java\testrunner\Runner.java
+E:\Bala\git-repo\Atom\Code\src\test\java\stepdefinitions\package-info.java

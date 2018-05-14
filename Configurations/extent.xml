@@ -11,10 +11,10 @@
         <protocol>https</protocol>
 
         <!-- title of the document -->
-        <documentTitle>Execution Results</documentTitle>
+        <documentTitle>SQS</documentTitle>
 
         <!-- report name - displayed at top-nav -->
-        <reportName>Execution Results</reportName>
+        <reportName>UBP Get Go+ Automation Dashboard</reportName>
 
         <!-- global date format override -->  <!-- defaults to yyyy-MM-dd -->
         <dateFormat>yyyy-MM-dd</dateFormat>

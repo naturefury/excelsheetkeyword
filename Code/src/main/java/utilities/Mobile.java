@@ -4,6 +4,7 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
@@ -21,6 +22,7 @@ public class Mobile {
 	private AppiumDriver<MobileElement> driver;
 	private DesiredCapabilities mobCap = new DesiredCapabilities();
 	private MobileActions actions;
+	private LogExtent logExtent = new LogExtent();
 	
 	public Mobile(Environment env) {
 		this.env = env;
@@ -41,16 +43,18 @@ public class Mobile {
 		try {
 			driver = new AppiumDriver<MobileElement>(new URL(env.appiumURL()),mobCap);
 			initialiseActions();
-			System.out.println("Atom INFO :: Launched the mobile driver with "+mobCap+" on the appium server "+env.appiumURL());
-			System.out.println("Atom INFO :: Default timeout to locate each element is set to "+env.locaterTimeout());
+			System.out.println("Atom INFO "+LocalDateTime.now()+" :: [Test Runner] Launched the mobile driver with "+mobCap+" on the appium server "+env.appiumURL());
+			System.out.println("Atom INFO "+LocalDateTime.now()+" :: [Test Runner] Default timeout to locate each element is set to "+env.locaterTimeout()+" seconds");
 		} catch (MalformedURLException e) {
-			System.out.println("Atom ERROR :: Problem while launching the mobile driver with "+mobCap+" on the appium server "+env.appiumURL());
+			System.out.println("Atom ERROR "+LocalDateTime.now()+" :: Problem while launching the mobile driver with "+mobCap+" on the appium server "+env.appiumURL());
 		}
 	}
 	
 	public void end() {
 		driver.quit();
-		System.out.println("Atom INFO :: Closed the mobile driver");
+		System.out.println("Atom INFO " + LocalDateTime.now() + " :: [Test Runner] Closed the mobile driver");
+		System.out.println(" ");
+		System.out.println(" ");
 	}
 	
 	private void initialiseActions() {
@@ -58,7 +62,7 @@ public class Mobile {
 	}
 	
 	public String takeScreenshot(String fileName) {
-		String screenshotName = fileName+new SimpleDateFormat("yyyyMMddHHmm").format(new Date())+".png";
+		String screenshotName = fileName+" "+new SimpleDateFormat("yyyyMMddHHmm").format(new Date())+".png";
 		try{
             File img = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(img, new File(env.paths().runResults()+"images/"+screenshotName));
@@ -86,6 +90,10 @@ public class Mobile {
 	}
 	
 	private void setIOSCapabilities(String[] dProperties) {
-		
+		//Code for setting IOS capabilities
+	}
+	
+	public LogExtent extent() {
+		return logExtent;
 	}
 }

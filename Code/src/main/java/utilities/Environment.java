@@ -60,4 +60,15 @@ public class Environment {
 			return null;
 		}
 	}
+	
+	public void printBeforeScenario(String scenarioName) {
+		System.out.println("*************************************************************************");
+		System.out.println("         Executing Scenario [ "+scenarioName.toUpperCase()+" ]");
+		System.out.println("*************************************************************************");
+	}
+	
+	public void printAfterScenario() {
+		System.out.println(" ");
+		System.out.println("");
+	}
 }
